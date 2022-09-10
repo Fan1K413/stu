@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+		<title>元素周期表</title>
+		<link rel="stylesheet" href="demo.css">
+	</head>
+	<body>
+		<h1>元素周期表</h1>
+		<p>
+			创建一个可见的周期表: <a href="javascript:createList(document.getElementById('elements'))">创建列表</a><br>
+			每个元素的类列表都包含 "元素周期表".
+		</p>
+		<p>
+			获取元素的信息: <a href="javascript:getElementDemo()">获取元素("<input id="getElement" type="text" value="oxygen">")</a><br>
+			你可以在上面的输入框中输入任何一个："8""o""氧""15.999"
+		</p>
+		<p>
+			获取化合物的信息: <a href="javascript:getCompoundDemo()">获取化合物("<input id="getCompound" type="text" value="carbon dioxide">")</a><br>
+			你可以在上面的输入框中输入任何一种: "carbon dioxide" "CO2" "c o2" "二氧化碳"
+		</p>
+		<p>元素信息来源于</p>
+		<a href="https://cdn.jsdelivr.net/gh/shangzhenyang/periodic-table/periodictable.min.js">
+https://cdn.jsdelivr.net/gh/shangzhenyang/periodic-table/periodictable.min.js</a>
+		<ul id="elements"></ul>
+		<script src="https://cdn.jsdelivr.net/gh/shangzhenyang/periodic-table/periodictable.min.js"></script>
+		<script src="demo.js"></script>
+<img src="https://api.dujin.org/bing/1366.php" alt="Bing每日图片" />
+	</body>
+</html>
