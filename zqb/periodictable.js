@@ -822,12 +822,12 @@ function getElement(searchTerm){
 		if(searchTerm.length<=2&&elements[i].symbol.toLowerCase()==searchTerm||searchTerm.length>2&&elements[i].name.toLowerCase().indexOf(searchTerm)!=-1||elements[i].name_chs==searchTerm||elements[i].name_cht==searchTerm||i+1==searchTerm||Math.round(elements[i].mass)==Math.round(searchTerm)){
 			return{
 				"相对原子质量":elements[i].mass*mole,
-				"mole":mole,
+//				"mole":mole,
 				"英文名称":elements[i].name,
 				"中文名称":elements[i].name_chs,
 //				"name_cht":elements[i].name_cht,
-				"number":i+1,
-				"symbol":elements[i].symbol
+				"原子序数":i+1,
+				"元素符号":elements[i].symbol
 			}
 		}
 	}
