@@ -7,7 +7,7 @@
 
 🧪[元素周期表](zqb)<br/>
 🧑‍🔬[数理化公式](gongshi)<br/>
-🧮[智能计算器]([202302.html](https://www.zybang.com/static/question/m-calculator/m-calculator.html))<br/>
+🧮[智能计算器](https://www.zybang.com/static/question/m-calculator/m-calculator.html)<br/>
 💯[考试成绩](exam)<br/>
   
  ### 📫 联系我 
