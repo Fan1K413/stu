@@ -1,715 +1,716 @@
+/* Code written by Shangzhen Yang https://github.com/shangzhenyang/periodic-table */
 var elements=[{
-	"符号":"H",
-	"名称_英文":"Hydrogen",
-	"名称_简体中文":"氢",
-	"名称_繁体中文":"氫",
-	"相对原子质量":1.008
-},{
-	"符号":"He",
-	"名称_英文":"Helium",
-	"名称_简体中文":"氦",
-	"名称_繁体中文":"氦",
-	"相对原子质量":4.003
-},{
-	"符号":"Li",
-	"名称_英文":"Lithium",
-	"名称_简体中文":"锂",
-	"名称_繁体中文":"鋰",
-	"相对原子质量":6.941
-},{
-	"符号":"Be",
-	"名称_英文":"Beryllium",
-	"名称_简体中文":"铍",
-	"名称_繁体中文":"鈹",
-	"相对原子质量":9.012
-},{
-	"符号":"B",
-	"名称_英文":"Boron",
-	"名称_简体中文":"硼",
-	"名称_繁体中文":"硼",
-	"相对原子质量":10.811
-},{
-	"符号":"C",
-	"名称_英文":"Carbon",
-	"名称_简体中文":"碳",
-	"名称_繁体中文":"碳",
-	"相对原子质量":12.011
-},{
-	"符号":"N",
-	"名称_英文":"Nitrogen",
-	"名称_简体中文":"氮",
-	"名称_繁体中文":"氮",
-	"相对原子质量":14.007
-},{
-	"符号":"O",
-	"名称_英文":"Oxygen",
-	"名称_简体中文":"氧",
-	"名称_繁体中文":"氧",
-	"相对原子质量":15.999
-},{
-	"符号":"F",
-	"名称_英文":"Fluorine",
-	"名称_简体中文":"氟",
-	"名称_繁体中文":"氟",
-	"相对原子质量":18.998
-},{
-	"符号":"Ne",
-	"名称_英文":"Neon",
-	"名称_简体中文":"氖",
-	"名称_繁体中文":"氖",
-	"相对原子质量":20.180
-},{
-	"符号":"Na",
-	"名称_英文":"Sodium",
-	"名称_简体中文":"钠",
-	"名称_繁体中文":"鈉",
-	"相对原子质量":22.990
-},{
-	"符号":"Mg",
-	"名称_英文":"Magnesium",
-	"名称_简体中文":"镁",
-	"名称_繁体中文":"鎂",
-	"相对原子质量":24.305
-},{
-	"符号":"Al",
-	"名称_英文":"Aluminum",
-	"名称_简体中文":"铝",
-	"名称_繁体中文":"鋁",
-	"相对原子质量":26.982
-},{
-	"符号":"Si",
-	"名称_英文":"Silicon",
-	"名称_简体中文":"硅",
-	"名称_繁体中文":"矽",
-	"相对原子质量":28.086
-},{
-	"符号":"P",
-	"名称_英文":"Phosphorus",
-	"名称_简体中文":"磷",
-	"名称_繁体中文":"磷",
-	"相对原子质量":30.974
-},{
-	"符号":"S",
-	"名称_英文":"Sulfur",
-	"名称_简体中文":"硫",
-	"名称_繁体中文":"硫",
-	"相对原子质量":32.066
-},{
-	"符号":"Cl",
-	"名称_英文":"Chlorine",
-	"名称_简体中文":"氯",
-	"名称_繁体中文":"氯",
-	"相对原子质量":35.453
-},{
-	"符号":"Ar",
-	"名称_英文":"Argon",
-	"名称_简体中文":"氩",
-	"名称_繁体中文":"氬",
-	"相对原子质量":39.948
-},{
-	"符号":"K",
-	"名称_英文":"Potassium",
-	"名称_简体中文":"钾",
-	"名称_繁体中文":"鉀",
-	"相对原子质量":39.098
-},{
-	"符号":"Ca",
-	"名称_英文":"Calcium",
-	"名称_简体中文":"钙",
-	"名称_繁体中文":"鈣",
-	"相对原子质量":40.078
-},{
-	"符号":"Sc",
-	"名称_英文":"Scandium",
-	"名称_简体中文":"钪",
-	"名称_繁体中文":"鈧",
-	"相对原子质量":44.956
-},{
-	"符号":"Ti",
-	"名称_英文":"Titanium",
-	"名称_简体中文":"钛",
-	"名称_繁体中文":"鈦",
-	"相对原子质量":47.867
-},{
-	"符号":"V",
-	"名称_英文":"Vanadium",
-	"名称_简体中文":"钒",
-	"名称_繁体中文":"釩",
-	"相对原子质量":50.942
-},{
-	"符号":"Cr",
-	"名称_英文":"Chromium",
-	"名称_简体中文":"铬",
-	"名称_繁体中文":"鉻",
-	"相对原子质量":51.996
-},{
-	"符号":"Mn",
-	"名称_英文":"Manganese",
-	"名称_简体中文":"锰",
-	"名称_繁体中文":"錳",
-	"相对原子质量":54.938
-},{
-	"符号":"Fe",
-	"名称_英文":"Iron",
-	"名称_简体中文":"铁",
-	"名称_繁体中文":"鐵",
-	"相对原子质量":55.845
-},{
-	"符号":"Co",
-	"名称_英文":"Cobalt",
-	"名称_简体中文":"钴",
-	"名称_繁体中文":"鈷",
-	"相对原子质量":58.933
-},{
-	"符号":"Ni",
-	"名称_英文":"Nickel",
-	"名称_简体中文":"镍",
-	"名称_繁体中文":"鎳",
-	"相对原子质量":58.693
-},{
-	"符号":"Cu",
-	"名称_英文":"Copper",
-	"名称_简体中文":"铜",
-	"名称_繁体中文":"銅",
-	"相对原子质量":63.546
-},{
-	"符号":"Zn",
-	"名称_英文":"Zinc",
-	"名称_简体中文":"锌",
-	"名称_繁体中文":"鋅",
-	"相对原子质量":65.38
-},{
-	"符号":"Ga",
-	"名称_英文":"Gallium",
-	"名称_简体中文":"镓",
-	"名称_繁体中文":"鎵",
-	"相对原子质量":69.723
-},{
-	"符号":"Ge",
-	"名称_英文":"Germanium",
-	"名称_简体中文":"锗",
-	"名称_繁体中文":"鍺",
-	"相对原子质量":72.630
-},{
-	"符号":"As",
-	"名称_英文":"Arsenic",
-	"名称_简体中文":"砷",
-	"名称_繁体中文":"砷",
-	"相对原子质量":74.922
-},{
-	"符号":"Se",
-	"名称_英文":"Selenium",
-	"名称_简体中文":"硒",
-	"名称_繁体中文":"硒",
-	"相对原子质量":78.971
-},{
-	"符号":"Br",
-	"名称_英文":"Bromine",
-	"名称_简体中文":"溴",
-	"名称_繁体中文":"溴",
-	"相对原子质量":79.904
-},{
-	"符号":"Kr",
-	"名称_英文":"Krypton",
-	"名称_简体中文":"氪",
-	"名称_繁体中文":"氪",
-	"相对原子质量":83.798
-},{
-	"符号":"Rb",
-	"名称_英文":"Rubidium",
-	"名称_简体中文":"铷",
-	"名称_繁体中文":"銣",
-	"相对原子质量":85.468
-},{
-	"符号":"Sr",
-	"名称_英文":"Strontium",
-	"名称_简体中文":"锶",
-	"名称_繁体中文":"鍶",
-	"相对原子质量":87.62
-},{
-	"符号":"Y",
-	"名称_英文":"Yttrium",
-	"名称_简体中文":"钇",
-	"名称_繁体中文":"釔",
-	"相对原子质量":88.906
-},{
-	"符号":"Zr",
-	"名称_英文":"Zirconium",
-	"名称_简体中文":"锆",
-	"名称_繁体中文":"鋯",
-	"相对原子质量":91.224
-},{
-	"符号":"Nb",
-	"名称_英文":"Niobium",
-	"名称_简体中文":"铌",
-	"名称_繁体中文":"鈮",
-	"相对原子质量":92.906
-},{
-	"符号":"Mo",
-	"名称_英文":"Molybdenum",
-	"名称_简体中文":"钼",
-	"名称_繁体中文":"鉬",
-	"相对原子质量":95.95
-},{
-	"符号":"Tc",
-	"名称_英文":"Technetium",
-	"名称_简体中文":"锝",
-	"名称_繁体中文":"鎝",
-	"相对原子质量":98
-},{
-	"符号":"Ru",
-	"名称_英文":"Ruthenium",
-	"名称_简体中文":"钌",
-	"名称_繁体中文":"釕",
-	"相对原子质量":101.07
-},{
-	"符号":"Rh",
-	"名称_英文":"Rhodium",
-	"名称_简体中文":"铑",
-	"名称_繁体中文":"銠",
-	"相对原子质量":102.906
-},{
-	"符号":"Pd",
-	"名称_英文":"Palladium",
-	"名称_简体中文":"钯",
-	"名称_繁体中文":"鈀",
-	"相对原子质量":106.42
-},{
-	"符号":"Ag",
-	"名称_英文":"Silver",
-	"名称_简体中文":"银",
-	"名称_繁体中文":"銀",
-	"相对原子质量":107.868
-},{
-	"符号":"Cd",
-	"名称_英文":"Cadmium",
-	"名称_简体中文":"镉",
-	"名称_繁体中文":"鎘",
-	"相对原子质量":112.411
-},{
-	"符号":"In",
-	"名称_英文":"Indium",
-	"名称_简体中文":"铟",
-	"名称_繁体中文":"銦",
-	"相对原子质量":114.818
-},{
-	"符号":"Sn",
-	"名称_英文":"Tin",
-	"名称_简体中文":"锡",
-	"名称_繁体中文":"錫",
-	"相对原子质量":118.710
-},{
-	"符号":"Sb",
-	"名称_英文":"Antimony",
-	"名称_简体中文":"锑",
-	"名称_繁体中文":"銻",
-	"相对原子质量":121.760
-},{
-	"符号":"Te",
-	"名称_英文":"Tellurium",
-	"名称_简体中文":"碲",
-	"名称_繁体中文":"碲",
-	"相对原子质量":127.60
-},{
-	"符号":"I",
-	"名称_英文":"Iodine",
-	"名称_简体中文":"碘",
-	"名称_繁体中文":"碘",
-	"相对原子质量":126.904
-},{
-	"符号":"Xe",
-	"名称_英文":"Xenon",
-	"名称_简体中文":"氙",
-	"名称_繁体中文":"氙",
-	"相对原子质量":131.29
-},{
-	"符号":"Cs",
-	"名称_英文":"Caesium",
-	"名称_简体中文":"铯",
-	"名称_繁体中文":"銫",
-	"相对原子质量":132.905
-},{
-	"符号":"Ba",
-	"名称_英文":"Barium",
-	"名称_简体中文":"钡",
-	"名称_繁体中文":"鋇",
-	"相对原子质量":137.327
-},{
-	"符号":"La",
-	"名称_英文":"Lanthanum",
-	"名称_简体中文":"镧",
-	"名称_繁体中文":"鑭",
-	"相对原子质量":138.906
-},{
-	"符号":"Ce",
-	"名称_英文":"Cerium",
-	"名称_简体中文":"铈",
-	"名称_繁体中文":"鈰",
-	"相对原子质量":140.116
-},{
-	"符号":"Pr",
-	"名称_英文":"Praseodymium",
-	"名称_简体中文":"镨",
-	"名称_繁体中文":"鐠",
-	"相对原子质量":140.908
-},{
-	"符号":"Nd",
-	"名称_英文":"Neodymium",
-	"名称_简体中文":"钕",
-	"名称_繁体中文":"釹",
-	"相对原子质量":144.24
-},{
-	"符号":"Pm",
-	"名称_英文":"Promethium",
-	"名称_简体中文":"钷",
-	"名称_繁体中文":"鉕",
-	"相对原子质量":145
-},{
-	"符号":"Sm",
-	"名称_英文":"Samarium",
-	"名称_简体中文":"钐",
-	"名称_繁体中文":"釤",
-	"相对原子质量":150.36
-},{
-	"符号":"Eu",
-	"名称_英文":"Europium",
-	"名称_简体中文":"铕",
-	"名称_繁体中文":"銪",
-	"相对原子质量":151.964
-},{
-	"符号":"Gd",
-	"名称_英文":"Gadolinium",
-	"名称_简体中文":"钆",
-	"名称_繁体中文":"釓",
-	"相对原子质量":157.25
-},{
-	"符号":"Tb",
-	"名称_英文":"Terbium",
-	"名称_简体中文":"铽",
-	"名称_繁体中文":"鋱",
-	"相对原子质量":158.925
-},{
-	"符号":"Dy",
-	"名称_英文":"Dysprosium",
-	"名称_简体中文":"镝",
-	"名称_繁体中文":"鏑",
-	"相对原子质量":162.50
-},{
-	"符号":"Ho",
-	"名称_英文":"Holmium",
-	"名称_简体中文":"钬",
-	"名称_繁体中文":"鈥",
-	"相对原子质量":164.930
-},{
-	"符号":"Er",
-	"名称_英文":"Erbium",
-	"名称_简体中文":"铒",
-	"名称_繁体中文":"鉺",
-	"相对原子质量":167.26
-},{
-	"符号":"Tm",
-	"名称_英文":"Thulium",
-	"名称_简体中文":"铥",
-	"名称_繁体中文":"銩",
-	"相对原子质量":168.934
-},{
-	"符号":"Yb",
-	"名称_英文":"Ytterbium",
-	"名称_简体中文":"镱",
-	"名称_繁体中文":"鐿",
-	"相对原子质量":173.05
-},{
-	"符号":"Lu",
-	"名称_英文":"Lutetium",
-	"名称_简体中文":"镥",
-	"名称_繁体中文":"鎦",
-	"相对原子质量":174.967
-},{
-	"符号":"Hf",
-	"名称_英文":"Hafnium",
-	"名称_简体中文":"铪",
-	"名称_繁体中文":"鉿",
-	"相对原子质量":178.49
-},{
-	"符号":"Ta",
-	"名称_英文":"Tantalum",
-	"名称_简体中文":"钽",
-	"名称_繁体中文":"鉭",
-	"相对原子质量":180.948
-},{
-	"符号":"W",
-	"名称_英文":"Tungsten",
-	"名称_简体中文":"钨",
-	"名称_繁体中文":"鎢",
-	"相对原子质量":183.84
-},{
-	"符号":"Re",
-	"名称_英文":"Rhenium",
-	"名称_简体中文":"铼",
-	"名称_繁体中文":"錸",
-	"相对原子质量":186.207
-},{
-	"符号":"Os",
-	"名称_英文":"Osmium",
-	"名称_简体中文":"锇",
-	"名称_繁体中文":"鋨",
-	"相对原子质量":190.23
-},{
-	"符号":"Ir",
-	"名称_英文":"Iridium",
-	"名称_简体中文":"铱",
-	"名称_繁体中文":"銥",
-	"相对原子质量":192.217
-},{
-	"符号":"Pt",
-	"名称_英文":"Platinum",
-	"名称_简体中文":"铂",
-	"名称_繁体中文":"鉑",
-	"相对原子质量":195.078
-},{
-	"符号":"Au",
-	"名称_英文":"Gold",
-	"名称_简体中文":"金",
-	"名称_繁体中文":"金",
-	"相对原子质量":196.967
-},{
-	"符号":"Hg",
-	"名称_英文":"Mercury",
-	"名称_简体中文":"汞",
-	"名称_繁体中文":"汞",
-	"相对原子质量":200.59
-},{
-	"符号":"Tl",
-	"名称_英文":"Thallium",
-	"名称_简体中文":"铊",
-	"名称_繁体中文":"鉈",
-	"相对原子质量":204.383
-},{
-	"符号":"Pb",
-	"名称_英文":"Lead",
-	"名称_简体中文":"铅",
-	"名称_繁体中文":"鉛",
-	"相对原子质量":207.2
-},{
-	"符号":"Bi",
-	"名称_英文":"Bismuth",
-	"名称_简体中文":"铋",
-	"名称_繁体中文":"鉍",
-	"相对原子质量":208.980
-},{
-	"符号":"Po",
-	"名称_英文":"Polonium",
-	"名称_简体中文":"钋",
-	"名称_繁体中文":"釙",
-	"相对原子质量":209
-},{
-	"符号":"At",
-	"名称_英文":"Astatine",
-	"名称_简体中文":"砹",
-	"名称_繁体中文":"砈",
-	"相对原子质量":210
-},{
-	"符号":"Rn",
-	"名称_英文":"Radon",
-	"名称_简体中文":"氡",
-	"名称_繁体中文":"氡",
-	"相对原子质量":222
-},{
-	"符号":"Fr",
-	"名称_英文":"Francium",
-	"名称_简体中文":"钫",
-	"名称_繁体中文":"鍅",
-	"相对原子质量":223
-},{
-	"符号":"Ra",
-	"名称_英文":"Radium",
-	"名称_简体中文":"镭",
-	"名称_繁体中文":"鐳",
-	"相对原子质量":226
-},{
-	"符号":"Ac",
-	"名称_英文":"Actinium",
-	"名称_简体中文":"锕",
-	"名称_繁体中文":"錒",
-	"相对原子质量":227
-},{
-	"符号":"Th",
-	"名称_英文":"Thorium",
-	"名称_简体中文":"钍",
-	"名称_繁体中文":"釷",
-	"相对原子质量":232.038
-},{
-	"符号":"Pa",
-	"名称_英文":"Protactinium",
-	"名称_简体中文":"镤",
-	"名称_繁体中文":"鏷",
-	"相对原子质量":231.036
-},{
-	"符号":"U",
-	"名称_英文":"Uranium",
-	"名称_简体中文":"铀",
-	"名称_繁体中文":"鈾",
-	"相对原子质量":238.029
-},{
-	"符号":"Np",
-	"名称_英文":"Neptunium",
-	"名称_简体中文":"镎",
-	"名称_繁体中文":"錼",
-	"相对原子质量":237
-},{
-	"符号":"Pu",
-	"名称_英文":"Plutonium",
-	"名称_简体中文":"钚",
-	"名称_繁体中文":"鈽",
-	"相对原子质量":244
-},{
-	"符号":"Am",
-	"名称_英文":"Americium",
-	"名称_简体中文":"镅",
-	"名称_繁体中文":"鋂",
-	"相对原子质量":243
-},{
-	"符号":"Cm",
-	"名称_英文":"Curium",
-	"名称_简体中文":"锔",
-	"名称_繁体中文":"鋦",
-	"相对原子质量":247
-},{
-	"符号":"Bk",
-	"名称_英文":"Berkelium",
-	"名称_简体中文":"锫",
-	"名称_繁体中文":"鉳",
-	"相对原子质量":247
-},{
-	"符号":"Cf",
-	"名称_英文":"Californium",
-	"名称_简体中文":"锎",
-	"名称_繁体中文":"鉲",
-	"相对原子质量":251
-},{
-	"符号":"Es",
-	"名称_英文":"Einsteinium",
-	"名称_简体中文":"锿",
-	"名称_繁体中文":"鑀",
-	"相对原子质量":252
-},{
-	"符号":"Fm",
-	"名称_英文":"Fermium",
-	"名称_简体中文":"镄",
-	"名称_繁体中文":"鐨",
-	"相对原子质量":257
-},{
-	"符号":"Md",
-	"名称_英文":"Mendelevium",
-	"名称_简体中文":"钔",
-	"名称_繁体中文":"鍆",
-	"相对原子质量":258
-},{
-	"符号":"No",
-	"名称_英文":"Nobelium",
-	"名称_简体中文":"锘",
-	"名称_繁体中文":"鍩",
-	"相对原子质量":259
-},{
-	"符号":"Lr",
-	"名称_英文":"Lawrencium",
-	"名称_简体中文":"铹",
-	"名称_繁体中文":"鐒",
-	"相对原子质量":266
-},{
-	"符号":"Rf",
-	"名称_英文":"Rutherfordium",
-	"名称_简体中文":"𬬻",
-	"名称_繁体中文":"鑪",
-	"相对原子质量":267
-},{
-	"符号":"Db",
-	"名称_英文":"Dubnium",
-	"名称_简体中文":"𬭊",
-	"名称_繁体中文":"𨧀",
-	"相对原子质量":268
-},{
-	"符号":"Sg",
-	"名称_英文":"Seaborgium",
-	"名称_简体中文":"𬭳",
-	"名称_繁体中文":"𨭎",
-	"相对原子质量":269
-},{
-	"符号":"Bh",
-	"名称_英文":"Bohrium",
-	"名称_简体中文":"𬭛",
-	"名称_繁体中文":"𨨏",
-	"相对原子质量":270
-},{
-	"符号":"Hs",
-	"名称_英文":"Hassium",
-	"名称_简体中文":"𬭶",
-	"名称_繁体中文":"𨭆",
-	"相对原子质量":277
-},{
-	"符号":"Mt",
-	"名称_英文":"Meitnerium",
-	"名称_简体中文":"鿏",
-	"名称_繁体中文":"䥑",
-	"相对原子质量":278
-},{
-	"符号":"Ds",
-	"名称_英文":"Darmstadtium",
-	"名称_简体中文":"𫟼",
-	"名称_繁体中文":"鐽",
-	"相对原子质量":281
-},{
-	"符号":"Rg",
-	"名称_英文":"Roentgenium",
-	"名称_简体中文":"𬬭",
-	"名称_繁体中文":"錀",
-	"相对原子质量":282
-},{
-	"符号":"Cn",
-	"名称_英文":"Copernicium",
-	"名称_简体中文":"鎶",
-	"名称_繁体中文":"鎶",
-	"相对原子质量":285
-},{
-	"符号":"Nh",
-	"名称_英文":"Nihonium",
-	"名称_简体中文":"鉨",
-	"名称_繁体中文":"鉨",
-	"相对原子质量":286
-},{
-	"符号":"Fl",
-	"名称_英文":"Flerovium",
-	"名称_简体中文":"𫓧",
-	"名称_繁体中文":"鈇",
-	"相对原子质量":289
-},{
-	"符号":"Mc",
-	"名称_英文":"Moscovium",
-	"名称_简体中文":"镆",
-	"名称_繁体中文":"鏌",
-	"相对原子质量":290
-},{
-	"符号":"Lv",
-	"名称_英文":"Livermorium",
-	"名称_简体中文":"鉝",
-	"名称_繁体中文":"鉝",
-	"相对原子质量":293
-},{
-	"符号":"Ts",
-	"名称_英文":"Tennessine",
-	"名称_简体中文":"Tennessine",
-	"名称_繁体中文":"Tennessine",
-	"相对原子质量":294
-},{
-	"符号":"Og",
-	"名称_英文":"Oganesson",
-	"名称_简体中文":"Oganesson",
-	"名称_繁体中文":"Oganesson",
-	"相对原子质量":294
+	"symbol":"H",
+	"name":"Hydrogen",
+	"name_chs":"氢",
+	"name_cht":"氫",
+	"mass":1.008
+},{
+	"symbol":"He",
+	"name":"Helium",
+	"name_chs":"氦",
+	"name_cht":"氦",
+	"mass":4.003
+},{
+	"symbol":"Li",
+	"name":"Lithium",
+	"name_chs":"锂",
+	"name_cht":"鋰",
+	"mass":6.941
+},{
+	"symbol":"Be",
+	"name":"Beryllium",
+	"name_chs":"铍",
+	"name_cht":"鈹",
+	"mass":9.012
+},{
+	"symbol":"B",
+	"name":"Boron",
+	"name_chs":"硼",
+	"name_cht":"硼",
+	"mass":10.811
+},{
+	"symbol":"C",
+	"name":"Carbon",
+	"name_chs":"碳",
+	"name_cht":"碳",
+	"mass":12.011
+},{
+	"symbol":"N",
+	"name":"Nitrogen",
+	"name_chs":"氮",
+	"name_cht":"氮",
+	"mass":14.007
+},{
+	"symbol":"O",
+	"name":"Oxygen",
+	"name_chs":"氧",
+	"name_cht":"氧",
+	"mass":15.999
+},{
+	"symbol":"F",
+	"name":"Fluorine",
+	"name_chs":"氟",
+	"name_cht":"氟",
+	"mass":18.998
+},{
+	"symbol":"Ne",
+	"name":"Neon",
+	"name_chs":"氖",
+	"name_cht":"氖",
+	"mass":20.180
+},{
+	"symbol":"Na",
+	"name":"Sodium",
+	"name_chs":"钠",
+	"name_cht":"鈉",
+	"mass":22.990
+},{
+	"symbol":"Mg",
+	"name":"Magnesium",
+	"name_chs":"镁",
+	"name_cht":"鎂",
+	"mass":24.305
+},{
+	"symbol":"Al",
+	"name":"Aluminum",
+	"name_chs":"铝",
+	"name_cht":"鋁",
+	"mass":26.982
+},{
+	"symbol":"Si",
+	"name":"Silicon",
+	"name_chs":"硅",
+	"name_cht":"矽",
+	"mass":28.086
+},{
+	"symbol":"P",
+	"name":"Phosphorus",
+	"name_chs":"磷",
+	"name_cht":"磷",
+	"mass":30.974
+},{
+	"symbol":"S",
+	"name":"Sulfur",
+	"name_chs":"硫",
+	"name_cht":"硫",
+	"mass":32.066
+},{
+	"symbol":"Cl",
+	"name":"Chlorine",
+	"name_chs":"氯",
+	"name_cht":"氯",
+	"mass":35.453
+},{
+	"symbol":"Ar",
+	"name":"Argon",
+	"name_chs":"氩",
+	"name_cht":"氬",
+	"mass":39.948
+},{
+	"symbol":"K",
+	"name":"Potassium",
+	"name_chs":"钾",
+	"name_cht":"鉀",
+	"mass":39.098
+},{
+	"symbol":"Ca",
+	"name":"Calcium",
+	"name_chs":"钙",
+	"name_cht":"鈣",
+	"mass":40.078
+},{
+	"symbol":"Sc",
+	"name":"Scandium",
+	"name_chs":"钪",
+	"name_cht":"鈧",
+	"mass":44.956
+},{
+	"symbol":"Ti",
+	"name":"Titanium",
+	"name_chs":"钛",
+	"name_cht":"鈦",
+	"mass":47.867
+},{
+	"symbol":"V",
+	"name":"Vanadium",
+	"name_chs":"钒",
+	"name_cht":"釩",
+	"mass":50.942
+},{
+	"symbol":"Cr",
+	"name":"Chromium",
+	"name_chs":"铬",
+	"name_cht":"鉻",
+	"mass":51.996
+},{
+	"symbol":"Mn",
+	"name":"Manganese",
+	"name_chs":"锰",
+	"name_cht":"錳",
+	"mass":54.938
+},{
+	"symbol":"Fe",
+	"name":"Iron",
+	"name_chs":"铁",
+	"name_cht":"鐵",
+	"mass":55.845
+},{
+	"symbol":"Co",
+	"name":"Cobalt",
+	"name_chs":"钴",
+	"name_cht":"鈷",
+	"mass":58.933
+},{
+	"symbol":"Ni",
+	"name":"Nickel",
+	"name_chs":"镍",
+	"name_cht":"鎳",
+	"mass":58.693
+},{
+	"symbol":"Cu",
+	"name":"Copper",
+	"name_chs":"铜",
+	"name_cht":"銅",
+	"mass":63.546
+},{
+	"symbol":"Zn",
+	"name":"Zinc",
+	"name_chs":"锌",
+	"name_cht":"鋅",
+	"mass":65.38
+},{
+	"symbol":"Ga",
+	"name":"Gallium",
+	"name_chs":"镓",
+	"name_cht":"鎵",
+	"mass":69.723
+},{
+	"symbol":"Ge",
+	"name":"Germanium",
+	"name_chs":"锗",
+	"name_cht":"鍺",
+	"mass":72.630
+},{
+	"symbol":"As",
+	"name":"Arsenic",
+	"name_chs":"砷",
+	"name_cht":"砷",
+	"mass":74.922
+},{
+	"symbol":"Se",
+	"name":"Selenium",
+	"name_chs":"硒",
+	"name_cht":"硒",
+	"mass":78.971
+},{
+	"symbol":"Br",
+	"name":"Bromine",
+	"name_chs":"溴",
+	"name_cht":"溴",
+	"mass":79.904
+},{
+	"symbol":"Kr",
+	"name":"Krypton",
+	"name_chs":"氪",
+	"name_cht":"氪",
+	"mass":83.798
+},{
+	"symbol":"Rb",
+	"name":"Rubidium",
+	"name_chs":"铷",
+	"name_cht":"銣",
+	"mass":85.468
+},{
+	"symbol":"Sr",
+	"name":"Strontium",
+	"name_chs":"锶",
+	"name_cht":"鍶",
+	"mass":87.62
+},{
+	"symbol":"Y",
+	"name":"Yttrium",
+	"name_chs":"钇",
+	"name_cht":"釔",
+	"mass":88.906
+},{
+	"symbol":"Zr",
+	"name":"Zirconium",
+	"name_chs":"锆",
+	"name_cht":"鋯",
+	"mass":91.224
+},{
+	"symbol":"Nb",
+	"name":"Niobium",
+	"name_chs":"铌",
+	"name_cht":"鈮",
+	"mass":92.906
+},{
+	"symbol":"Mo",
+	"name":"Molybdenum",
+	"name_chs":"钼",
+	"name_cht":"鉬",
+	"mass":95.95
+},{
+	"symbol":"Tc",
+	"name":"Technetium",
+	"name_chs":"锝",
+	"name_cht":"鎝",
+	"mass":98
+},{
+	"symbol":"Ru",
+	"name":"Ruthenium",
+	"name_chs":"钌",
+	"name_cht":"釕",
+	"mass":101.07
+},{
+	"symbol":"Rh",
+	"name":"Rhodium",
+	"name_chs":"铑",
+	"name_cht":"銠",
+	"mass":102.906
+},{
+	"symbol":"Pd",
+	"name":"Palladium",
+	"name_chs":"钯",
+	"name_cht":"鈀",
+	"mass":106.42
+},{
+	"symbol":"Ag",
+	"name":"Silver",
+	"name_chs":"银",
+	"name_cht":"銀",
+	"mass":107.868
+},{
+	"symbol":"Cd",
+	"name":"Cadmium",
+	"name_chs":"镉",
+	"name_cht":"鎘",
+	"mass":112.411
+},{
+	"symbol":"In",
+	"name":"Indium",
+	"name_chs":"铟",
+	"name_cht":"銦",
+	"mass":114.818
+},{
+	"symbol":"Sn",
+	"name":"Tin",
+	"name_chs":"锡",
+	"name_cht":"錫",
+	"mass":118.710
+},{
+	"symbol":"Sb",
+	"name":"Antimony",
+	"name_chs":"锑",
+	"name_cht":"銻",
+	"mass":121.760
+},{
+	"symbol":"Te",
+	"name":"Tellurium",
+	"name_chs":"碲",
+	"name_cht":"碲",
+	"mass":127.60
+},{
+	"symbol":"I",
+	"name":"Iodine",
+	"name_chs":"碘",
+	"name_cht":"碘",
+	"mass":126.904
+},{
+	"symbol":"Xe",
+	"name":"Xenon",
+	"name_chs":"氙",
+	"name_cht":"氙",
+	"mass":131.29
+},{
+	"symbol":"Cs",
+	"name":"Caesium",
+	"name_chs":"铯",
+	"name_cht":"銫",
+	"mass":132.905
+},{
+	"symbol":"Ba",
+	"name":"Barium",
+	"name_chs":"钡",
+	"name_cht":"鋇",
+	"mass":137.327
+},{
+	"symbol":"La",
+	"name":"Lanthanum",
+	"name_chs":"镧",
+	"name_cht":"鑭",
+	"mass":138.906
+},{
+	"symbol":"Ce",
+	"name":"Cerium",
+	"name_chs":"铈",
+	"name_cht":"鈰",
+	"mass":140.116
+},{
+	"symbol":"Pr",
+	"name":"Praseodymium",
+	"name_chs":"镨",
+	"name_cht":"鐠",
+	"mass":140.908
+},{
+	"symbol":"Nd",
+	"name":"Neodymium",
+	"name_chs":"钕",
+	"name_cht":"釹",
+	"mass":144.24
+},{
+	"symbol":"Pm",
+	"name":"Promethium",
+	"name_chs":"钷",
+	"name_cht":"鉕",
+	"mass":145
+},{
+	"symbol":"Sm",
+	"name":"Samarium",
+	"name_chs":"钐",
+	"name_cht":"釤",
+	"mass":150.36
+},{
+	"symbol":"Eu",
+	"name":"Europium",
+	"name_chs":"铕",
+	"name_cht":"銪",
+	"mass":151.964
+},{
+	"symbol":"Gd",
+	"name":"Gadolinium",
+	"name_chs":"钆",
+	"name_cht":"釓",
+	"mass":157.25
+},{
+	"symbol":"Tb",
+	"name":"Terbium",
+	"name_chs":"铽",
+	"name_cht":"鋱",
+	"mass":158.925
+},{
+	"symbol":"Dy",
+	"name":"Dysprosium",
+	"name_chs":"镝",
+	"name_cht":"鏑",
+	"mass":162.50
+},{
+	"symbol":"Ho",
+	"name":"Holmium",
+	"name_chs":"钬",
+	"name_cht":"鈥",
+	"mass":164.930
+},{
+	"symbol":"Er",
+	"name":"Erbium",
+	"name_chs":"铒",
+	"name_cht":"鉺",
+	"mass":167.26
+},{
+	"symbol":"Tm",
+	"name":"Thulium",
+	"name_chs":"铥",
+	"name_cht":"銩",
+	"mass":168.934
+},{
+	"symbol":"Yb",
+	"name":"Ytterbium",
+	"name_chs":"镱",
+	"name_cht":"鐿",
+	"mass":173.05
+},{
+	"symbol":"Lu",
+	"name":"Lutetium",
+	"name_chs":"镥",
+	"name_cht":"鎦",
+	"mass":174.967
+},{
+	"symbol":"Hf",
+	"name":"Hafnium",
+	"name_chs":"铪",
+	"name_cht":"鉿",
+	"mass":178.49
+},{
+	"symbol":"Ta",
+	"name":"Tantalum",
+	"name_chs":"钽",
+	"name_cht":"鉭",
+	"mass":180.948
+},{
+	"symbol":"W",
+	"name":"Tungsten",
+	"name_chs":"钨",
+	"name_cht":"鎢",
+	"mass":183.84
+},{
+	"symbol":"Re",
+	"name":"Rhenium",
+	"name_chs":"铼",
+	"name_cht":"錸",
+	"mass":186.207
+},{
+	"symbol":"Os",
+	"name":"Osmium",
+	"name_chs":"锇",
+	"name_cht":"鋨",
+	"mass":190.23
+},{
+	"symbol":"Ir",
+	"name":"Iridium",
+	"name_chs":"铱",
+	"name_cht":"銥",
+	"mass":192.217
+},{
+	"symbol":"Pt",
+	"name":"Platinum",
+	"name_chs":"铂",
+	"name_cht":"鉑",
+	"mass":195.078
+},{
+	"symbol":"Au",
+	"name":"Gold",
+	"name_chs":"金",
+	"name_cht":"金",
+	"mass":196.967
+},{
+	"symbol":"Hg",
+	"name":"Mercury",
+	"name_chs":"汞",
+	"name_cht":"汞",
+	"mass":200.59
+},{
+	"symbol":"Tl",
+	"name":"Thallium",
+	"name_chs":"铊",
+	"name_cht":"鉈",
+	"mass":204.383
+},{
+	"symbol":"Pb",
+	"name":"Lead",
+	"name_chs":"铅",
+	"name_cht":"鉛",
+	"mass":207.2
+},{
+	"symbol":"Bi",
+	"name":"Bismuth",
+	"name_chs":"铋",
+	"name_cht":"鉍",
+	"mass":208.980
+},{
+	"symbol":"Po",
+	"name":"Polonium",
+	"name_chs":"钋",
+	"name_cht":"釙",
+	"mass":209
+},{
+	"symbol":"At",
+	"name":"Astatine",
+	"name_chs":"砹",
+	"name_cht":"砈",
+	"mass":210
+},{
+	"symbol":"Rn",
+	"name":"Radon",
+	"name_chs":"氡",
+	"name_cht":"氡",
+	"mass":222
+},{
+	"symbol":"Fr",
+	"name":"Francium",
+	"name_chs":"钫",
+	"name_cht":"鍅",
+	"mass":223
+},{
+	"symbol":"Ra",
+	"name":"Radium",
+	"name_chs":"镭",
+	"name_cht":"鐳",
+	"mass":226
+},{
+	"symbol":"Ac",
+	"name":"Actinium",
+	"name_chs":"锕",
+	"name_cht":"錒",
+	"mass":227
+},{
+	"symbol":"Th",
+	"name":"Thorium",
+	"name_chs":"钍",
+	"name_cht":"釷",
+	"mass":232.038
+},{
+	"symbol":"Pa",
+	"name":"Protactinium",
+	"name_chs":"镤",
+	"name_cht":"鏷",
+	"mass":231.036
+},{
+	"symbol":"U",
+	"name":"Uranium",
+	"name_chs":"铀",
+	"name_cht":"鈾",
+	"mass":238.029
+},{
+	"symbol":"Np",
+	"name":"Neptunium",
+	"name_chs":"镎",
+	"name_cht":"錼",
+	"mass":237
+},{
+	"symbol":"Pu",
+	"name":"Plutonium",
+	"name_chs":"钚",
+	"name_cht":"鈽",
+	"mass":244
+},{
+	"symbol":"Am",
+	"name":"Americium",
+	"name_chs":"镅",
+	"name_cht":"鋂",
+	"mass":243
+},{
+	"symbol":"Cm",
+	"name":"Curium",
+	"name_chs":"锔",
+	"name_cht":"鋦",
+	"mass":247
+},{
+	"symbol":"Bk",
+	"name":"Berkelium",
+	"name_chs":"锫",
+	"name_cht":"鉳",
+	"mass":247
+},{
+	"symbol":"Cf",
+	"name":"Californium",
+	"name_chs":"锎",
+	"name_cht":"鉲",
+	"mass":251
+},{
+	"symbol":"Es",
+	"name":"Einsteinium",
+	"name_chs":"锿",
+	"name_cht":"鑀",
+	"mass":252
+},{
+	"symbol":"Fm",
+	"name":"Fermium",
+	"name_chs":"镄",
+	"name_cht":"鐨",
+	"mass":257
+},{
+	"symbol":"Md",
+	"name":"Mendelevium",
+	"name_chs":"钔",
+	"name_cht":"鍆",
+	"mass":258
+},{
+	"symbol":"No",
+	"name":"Nobelium",
+	"name_chs":"锘",
+	"name_cht":"鍩",
+	"mass":259
+},{
+	"symbol":"Lr",
+	"name":"Lawrencium",
+	"name_chs":"铹",
+	"name_cht":"鐒",
+	"mass":266
+},{
+	"symbol":"Rf",
+	"name":"Rutherfordium",
+	"name_chs":"𬬻",
+	"name_cht":"鑪",
+	"mass":267
+},{
+	"symbol":"Db",
+	"name":"Dubnium",
+	"name_chs":"𬭊",
+	"name_cht":"𨧀",
+	"mass":268
+},{
+	"symbol":"Sg",
+	"name":"Seaborgium",
+	"name_chs":"𬭳",
+	"name_cht":"𨭎",
+	"mass":269
+},{
+	"symbol":"Bh",
+	"name":"Bohrium",
+	"name_chs":"𬭛",
+	"name_cht":"𨨏",
+	"mass":270
+},{
+	"symbol":"Hs",
+	"name":"Hassium",
+	"name_chs":"𬭶",
+	"name_cht":"𨭆",
+	"mass":277
+},{
+	"symbol":"Mt",
+	"name":"Meitnerium",
+	"name_chs":"鿏",
+	"name_cht":"䥑",
+	"mass":278
+},{
+	"symbol":"Ds",
+	"name":"Darmstadtium",
+	"name_chs":"𫟼",
+	"name_cht":"鐽",
+	"mass":281
+},{
+	"symbol":"Rg",
+	"name":"Roentgenium",
+	"name_chs":"𬬭",
+	"name_cht":"錀",
+	"mass":282
+},{
+	"symbol":"Cn",
+	"name":"Copernicium",
+	"name_chs":"鎶",
+	"name_cht":"鎶",
+	"mass":285
+},{
+	"symbol":"Nh",
+	"name":"Nihonium",
+	"name_chs":"鉨",
+	"name_cht":"鉨",
+	"mass":286
+},{
+	"symbol":"Fl",
+	"name":"Flerovium",
+	"name_chs":"𫓧",
+	"name_cht":"鈇",
+	"mass":289
+},{
+	"symbol":"Mc",
+	"name":"Moscovium",
+	"name_chs":"镆",
+	"name_cht":"鏌",
+	"mass":290
+},{
+	"symbol":"Lv",
+	"name":"Livermorium",
+	"name_chs":"鉝",
+	"name_cht":"鉝",
+	"mass":293
+},{
+	"symbol":"Ts",
+	"name":"Tennessine",
+	"name_chs":"Tennessine",
+	"name_cht":"Tennessine",
+	"mass":294
+},{
+	"symbol":"Og",
+	"name":"Oganesson",
+	"name_chs":"Oganesson",
+	"name_cht":"Oganesson",
+	"mass":294
 }]
 function createList(ul){
 	if(ul==null){
-		var existingUl=document.getElementsByTag名称_英文("ul")
+		var existingUl=document.getElementsByTagName("ul")
 		if(existingUl.length>0){
 			ul=existingUl[0]
 		}else{
@@ -721,13 +722,13 @@ function createList(ul){
 	for(var i=0;i<elements.length;i++){
 		var newLi=document.createElement("li")
 		newLi.setAttribute("class","periodic-table")
-		newLi.id=elements[i].名称_英文
+		newLi.id=elements[i].name
 		if(/zh-cn|zh-hans|zh-hans-cn/i.test(navigator.language)){
-			newLi.innerText="原子序数："+(i+1)+"\n符号："+elements[i].符号+"\n名称："+elements[i].名称_简体中文+"\n相对原子质量："+elements[i].相对原子质量
+			newLi.innerText="原子序数："+(i+1)+"\n符号："+elements[i].symbol+"\n名称："+elements[i].name_chs+"\n相对原子质量："+elements[i].mass
 		}else if(navigator.language.indexOf("zh")!=-1){
-			newLi.innerText="原子序數："+(i+1)+"\n符號："+elements[i].符号+"\n名稱："+elements[i].名称_繁体中文+"\n相對原子質量："+elements[i].相对原子质量
+			newLi.innerText="原子序數："+(i+1)+"\n符號："+elements[i].symbol+"\n名稱："+elements[i].name_cht+"\n相對原子質量："+elements[i].mass
 		}else{
-			newLi.innerText="Atomic number: "+(i+1)+"\n符号: "+elements[i].符号+"\n名称_英文: "+elements[i].名称_英文+"\nAtomic 相对原子质量: "+elements[i].相对原子质量
+			newLi.innerText="Atomic number: "+(i+1)+"\nSymbol: "+elements[i].symbol+"\nName: "+elements[i].name+"\nAtomic mass: "+elements[i].mass
 		}
 		newLi.onclick=function(){
 			try{
@@ -818,18 +819,15 @@ function getElement(searchTerm){
 				searchTerm=searchTerm.replace(mole,"")
 			}
 		}
-		if(searchTerm.length<=2&&elements[i].符号.toLowerCase()==searchTerm||searchTerm.length>2&&elements[i].名称_英文.toLowerCase().indexOf(searchTerm)!=-1||elements[i].名称_简体中文==searchTerm||elements[i].名称_繁体中文==searchTerm||i+1==searchTerm||Math.round(elements[i].相对原子质量)==Math.round(searchTerm)){
+		if(searchTerm.length<=2&&elements[i].symbol.toLowerCase()==searchTerm||searchTerm.length>2&&elements[i].name.toLowerCase().indexOf(searchTerm)!=-1||elements[i].name_chs==searchTerm||elements[i].name_cht==searchTerm||i+1==searchTerm||Math.round(elements[i].mass)==Math.round(searchTerm)){
 			return{
-				"相对原子质量":elements[i].相对原子质量*mole,
-//				"mole":mole,
-//				"名称_英文":elements[i].名称_英文,
-//				"名称_简体中文":elements[i].名称_简体中文,
-//				"名称_繁体中文":elements[i].名称_繁体中文,
-//				"number":i+1,
-				"英文名称":elements[i].名称_英文,
-				"中文名称":elements[i].名称_简体中文,
-				"原子序数":i+1,
-				"符号":elements[i].符号
+				"相对原子质量":elements[i].mass*mole,
+				"mole":mole,
+				"英文名称":elements[i].name,
+				"中文名称":elements[i].name_chs,
+//				"name_cht":elements[i].name_cht,
+				"number":i+1,
+				"symbol":elements[i].symbol
 			}
 		}
 	}
@@ -848,9 +846,9 @@ function getCompound(searchTerm){
 				var result=getElement(searchTerm.toLowerCase())
 				if(result){
 					tempRecord.push([{
-						"符号":result.符号,
+						"symbol":result.symbol,
 						"mole":result.mole,
-						"相对原子质量":result.相对原子质量
+						"mass":result.mass
 					}])
 				}
 				if(letters[i]==" "||isUpperCase.test(letters[i+1])){
@@ -866,36 +864,36 @@ function getCompound(searchTerm){
 			result=getElement(characters[1])
 			if(result){
 				record.push([{
-					"符号":result.符号,
+					"symbol":result.symbol,
 					"mole":result.mole,
-					"相对原子质量":result.相对原子质量
+					"mass":result.mass
 				}])
 			}
 			mole=1
 			result=getElement(characters[0])
 			if(result){
 				record.push([{
-					"符号":result.符号,
+					"symbol":result.symbol,
 					"mole":result.mole,
-					"相对原子质量":result.相对原子质量
+					"mass":result.mass
 				}])
 			}
 		}else{
 			return getElement(searchTerm)
 		}
-		var 相对原子质量=0,符号=""
+		var mass=0,symbol=""
 		for(var i=0;i<record.length;i++){
 			if(record[i]){
-				符号+=record[i][0].符号
+				symbol+=record[i][0].symbol
 				if(record[i][0].mole>1){
-					符号+=record[i][0].mole
+					symbol+=record[i][0].mole
 				}
-				相对原子质量+=record[i][0].相对原子质量
+				mass+=record[i][0].mass
 			}
 		}
 		return{
-			"相对原子质量":相对原子质量,
-			"符号":符号
+			"mass":mass,
+			"symbol":symbol
 		}
 	}
 }
