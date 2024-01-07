@@ -822,12 +822,12 @@ function getElement(searchTerm){
 		if(searchTerm.length<=2&&elements[i].symbol.toLowerCase()==searchTerm||searchTerm.length>2&&elements[i].name.toLowerCase().indexOf(searchTerm)!=-1||elements[i].name_chs==searchTerm||elements[i].name_cht==searchTerm||i+1==searchTerm||Math.round(elements[i].mass)==Math.round(searchTerm)){
 			return{
 				"相对原子质量":elements[i].mass*mole,
-//				"mole":mole,
 				"英文名称":elements[i].name,
 				"中文名称":elements[i].name_chs,
 //				"name_cht":elements[i].name_cht,
 				"原子序数":i+1,
-				"元素符号":elements[i].symbol
+				"元素符号":elements[i].symbol,
+				"原子数":mole
 			}
 		}
 	}
@@ -846,9 +846,9 @@ function getCompound(searchTerm){
 				var result=getElement(searchTerm.toLowerCase())
 				if(result){
 					tempRecord.push([{
-						"symbol":result.symbol,
-						"mole":result.mole,
-						"mass":result.mass
+						"symbol":result.元素符号,
+						"mole":result.原子数,
+						"mass":result.相对原子质量
 					}])
 				}
 				if(letters[i]==" "||isUpperCase.test(letters[i+1])){
@@ -864,18 +864,18 @@ function getCompound(searchTerm){
 			result=getElement(characters[1])
 			if(result){
 				record.push([{
-					"symbol":result.symbol,
-					"mole":result.mole,
-					"mass":result.mass
+					"symbol":result.元素符号,
+					"mole":result.原子数,
+					"mass":result.相对原子质量
 				}])
 			}
 			mole=1
 			result=getElement(characters[0])
 			if(result){
 				record.push([{
-					"symbol":result.symbol,
-					"mole":result.mole,
-					"mass":result.mass
+					"symbol":result.元素符号,
+					"mole":result.原子数,
+					"mass":result.相对原子质量
 				}])
 			}
 		}else{
@@ -892,8 +892,8 @@ function getCompound(searchTerm){
 			}
 		}
 		return{
-			"mass":mass,
-			"symbol":symbol
+			"相对分子质量":mass,
+			"化学式":symbol
 		}
 	}
 }
