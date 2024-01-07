@@ -1,5 +1,5 @@
 function elementClicked(element){
-	alert("你点击了 "+element.name_chs+".\n"+JSON.stringify(element)+"\n\n维基百科：https://zh.wikipedia.org/wiki/"+element.name_chs+"")
+	alert("你点击了 "+element.name_chs+".\n"+JSON.stringify(element)")
 }
 function getElementDemo(){
 	var value=document.getElementById("getElement").value
