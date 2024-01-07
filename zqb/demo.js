@@ -1,5 +1,5 @@
 function elementClicked(element){
-	alert("你点击了 "+element.name_chs+".\n"+JSON.stringify(element)")
+	alert("你点击了 "+element.中文名称+".\n"+JSON.stringify(element)+"")
 }
 function getElementDemo(){
 	var value=document.getElementById("getElement").value
