@@ -1,8 +1,8 @@
-# 你好，这里是[二组](https://2z.cyming.top)! 👋
+# [考试成绩](https://stu.cyming.top)! 👋
 
 <img width="125" align="right" src="https://img.cyming.top/file/dc6bec7675d1dd05b5a09.png" /> 
   
- > 淄川中学2022级10班二组
+ > 考试成绩
 
 [2022.11高一上期中](202211.html)
 [下载](202211.xlsx)<br/>
@@ -23,7 +23,7 @@
 [2023.12高二上月考](202312.html)
 [下载](202312.xlsx)<br/>
 [成绩分析](exam.html)
-[下载](exam.xlsx)🤖<br/>
+[下载](exam.xlsx)🗂️<br/>
   
  ### 📫 联系我 
   
